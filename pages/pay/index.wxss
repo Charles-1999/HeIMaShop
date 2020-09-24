@@ -1,0 +1,146 @@
+.receive_address_row {
+  padding: 20rpx;
+  border-bottom: 20rpx solid #f8f8f8;
+}
+.receive_address_row .address_info .user_row {
+  display: flex;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.receive_address_row .address_info .user_row .uesr_phone {
+  padding-left: 30rpx;
+}
+.receive_address_row .address_info .address {
+  padding-top: 10rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.cart_content {
+  border-bottom: 20rpx solid #f8f8f8;
+}
+.cart_content .cart_main .cart_item {
+  display: flex;
+  padding: 20rpx;
+}
+.cart_content .cart_main .cart_item .item_img {
+  flex: 4;
+  padding: 0 20rpx;
+}
+.cart_content .cart_main .cart_item .item_img image {
+  border: 2rpx solid #F8F8F8;
+  border-radius: 10rpx;
+  width: 100%;
+}
+.cart_content .cart_main .cart_item .item_content {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart_content .cart_main .cart_item .item_content .item_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.cart_content .cart_main .cart_item .item_content .item_price_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.cart_content .cart_main .cart_item .item_content .item_price_row .item_price {
+  color: var(--themeColor);
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.cart_content .cart_main .cart_item .item_content .item_price_row .item_num_warp {
+  display: flex;
+}
+.cart_content .cart_main .cart_item .item_content .item_price_row .item_num_warp .item_num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60rpx;
+  height: 40rpx;
+  margin: 0 10rpx;
+}
+.cart_content .cart_main .cart_empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50rpx;
+}
+.cart_content .cart_main .cart_empty image {
+  width: 60%;
+}
+.cart_content .cart_main .cart_empty .text1 {
+  padding: 20rpx;
+  font-size: 32rpx;
+}
+.cart_content .cart_main .cart_empty .text2 {
+  font-size: 26rpx;
+  color: dimgrey;
+}
+.btm_counter_bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100rpx;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0rpx 0rpx 0 20rpx;
+}
+.btm_counter_bar .counter_warp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btm_counter_bar .counter_warp .total {
+  font-size: 34rpx;
+  font-weight: 500;
+}
+.btm_counter_bar .counter_warp .payment {
+  color: var(--themeColor);
+  font-size: 32rpx;
+  font-weight: 500;
+  padding: 0 10rpx;
+}
+.btm_counter_bar .counter_warp .counter_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250rpx;
+  border-radius: 0;
+  background-color: #01C763;
+  color: #ffffff;
+  height: 100rpx;
+  position: relative;
+}
+.btm_counter_bar .counter_warp .counter_btn .text {
+  display: flex;
+  align-items: flex-end;
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.btm_counter_bar .counter_warp .counter_btn .text .item_total {
+  font-size: 24rpx;
+  font-weight: 500;
+  padding: 0 0 5rpx 10rpx;
+}
+.btm_counter_bar .counter_warp .counter_btn button {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.isIphoneX {
+  height: 150rpx !important;
+}

@@ -1,0 +1,153 @@
+.receive_address_row{
+    padding: 20rpx;
+    border-bottom: 20rpx solid #f8f8f8;
+    .address_info{
+        .user_row{
+            display: flex;
+            font-size: 32rpx;
+            font-weight: 600;
+            .uesr_phone{
+                padding-left: 30rpx;
+            }
+        }
+        .address{
+            padding-top: 10rpx;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+    }
+}
+
+.cart_content{
+    border-bottom: 20rpx solid #f8f8f8;
+    .cart_main{
+        .cart_item{
+            display: flex;
+            padding: 20rpx;
+            .item_img{
+                flex: 4;
+                padding: 0 20rpx;
+                image{
+                    border: 2rpx solid #F8F8F8;
+                    border-radius: 10rpx;
+                    width: 100%;
+                }
+            }
+            .item_content{
+                flex: 8;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .item_name{
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                }
+                .item_price_row{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    .item_price{
+                        color:var(--themeColor);
+                        font-size: 34rpx;
+                        font-weight: 600;
+                    }
+                    .item_num_warp{
+                        display: flex;
+                        .item_num{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 60rpx;
+                            height: 40rpx;
+                            margin: 0 10rpx;
+                        }
+                    }
+                }
+            }
+        }
+        .cart_empty{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50rpx;
+            image{
+                width: 60%;
+            }
+            .text1{
+                padding: 20rpx;
+                font-size: 32rpx;
+            }
+            .text2{
+                font-size: 26rpx;
+                color: dimgrey;
+            }
+        }
+    }
+}
+
+.btm_counter_bar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100rpx;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0rpx 0rpx 0 20rpx;
+    .counter_warp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .total{
+            font-size: 34rpx;
+            font-weight: 500;
+        }
+        .payment{
+            color: var(--themeColor);
+            font-size: 32rpx;
+            font-weight: 500;
+            padding: 0 10rpx;
+        }
+        .counter_btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250rpx;
+            border-radius: 0;
+            background-color: #01C763;
+            color: #ffffff;
+            height: 100rpx;
+            position: relative;
+            .text{
+                display: flex;
+                align-items: flex-end;
+                font-size: 34rpx;
+                font-weight: 600;
+                .item_total{
+                    font-size: 24rpx;
+                    font-weight: 500;
+                    padding: 0 0 5rpx 10rpx;
+                }
+            }
+            button{
+                position: absolute;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.isIphoneX{
+    height: 150rpx !important;
+} 

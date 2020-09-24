@@ -1,0 +1,225 @@
+page{
+    border-bottom: 200rpx solid #fff;
+}
+
+.receive_address_row{
+    padding: 20rpx;
+    border-bottom: 20rpx solid #f8f8f8;
+    .add_address_btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .address_info{
+        .user_row{
+            display: flex;
+            font-size: 32rpx;
+            font-weight: 600;
+            .uesr_phone{
+                padding-left: 30rpx;
+            }
+        }
+        .address{
+            padding-top: 10rpx;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+    }
+}
+
+.cart_content{
+    border-bottom: 20rpx solid #f8f8f8;
+    .cart_main{
+        .cart_item{
+            display: flex;
+            padding: 20rpx;
+            .item_checkbox{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .item_img{
+                flex: 4;
+                padding: 0 20rpx;
+                image{
+                    border: 2rpx solid #F8F8F8;
+                    border-radius: 10rpx;
+                    width: 100%;
+                }
+            }
+            .item_content{
+                flex: 8;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .item_name{
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                }
+                .item_price_row{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    .item_price{
+                        color:var(--themeColor);
+                        font-size: 34rpx;
+                        font-weight: 600;
+                    }
+                    .item_num_warp{
+                        display: flex;
+                        .num_editor{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 40rpx;
+                            height: 40rpx;
+                            background-color: #F8F8F8;
+                            font-size: 36rpx;
+                            font-weight: 600;
+                            position: relative;
+                            button{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 40rpx;
+                                height: 40rpx;
+                                opacity: 0;
+                                padding: 0;
+                            }
+                        }
+                        .disable{
+                            background-color: #ffffff !important;
+                            color: darkgrey;
+                        }
+                        .item_num{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 60rpx;
+                            height: 40rpx;
+                            background-color: #F8F8F8;
+                            margin: 0 10rpx;
+                        }
+                    }
+                }
+            }
+        }
+        .cart_empty{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50rpx;
+            image{
+                width: 60%;
+            }
+            .text1{
+                padding: 20rpx;
+                font-size: 32rpx;
+            }
+            .text2{
+                font-size: 26rpx;
+                color: dimgrey;
+            }
+        }
+    }
+}
+
+.btm_counter_bar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100rpx;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rpx 0rpx 0 20rpx;
+    .all_checkbox_warp{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .all_checkbox_text{
+            font-size: 20rpx;
+            color: darkgrey;
+        }
+    }
+    .counter_warp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .total{
+            font-size: 34rpx;
+            font-weight: 500;
+        }
+        .payment{
+            color: var(--themeColor);
+            font-size: 32rpx;
+            font-weight: 500;
+            padding: 0 10rpx;
+        }
+        .counter_btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250rpx;
+            border-radius: 0;
+            background-color: var(--themeColor);
+            color: #ffffff;
+            height: 100rpx;
+            position: relative;
+            .text{
+                display: flex;
+                align-items: flex-end;
+                font-size: 34rpx;
+                font-weight: 600;
+                .item_total{
+                    font-size: 24rpx;
+                    font-weight: 500;
+                    padding: 0 0 5rpx 10rpx;
+                }
+            }
+            button{
+                position: absolute;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+checkbox{
+    .wx-checkbox-input{
+        border-radius: 50%;/* 圆角 */
+        width: 40rpx; /* 背景的宽 */
+        height: 40rpx; /* 背景的高 */
+    }
+    .wx-checkbox-input-checked{
+        border-radius: 50%;/* 圆角 */
+        background: var(--themeColor);
+        width: 40rpx;
+        height: 40rpx;
+    } 
+    .wx-checkbox-input-checked::before{
+        border-radius: 50%;/* 圆角 */
+        width: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+        height: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+        line-height: 40rpx;
+        text-align: center;
+        font-size:30rpx; /* 对勾大小 30rpx */
+        color:#fff; /* 对勾颜色 白色 */
+        background: transparent; 
+        transform:translate(-50%, -50%) scale(1);
+        -webkit-transform:translate(-50%, -50%) scale(1);
+    }
+}

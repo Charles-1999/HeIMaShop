@@ -1,0 +1,59 @@
+<!-- 收货地址 开始 -->
+<view class="receive_address_row">
+    <view class="address_info">
+        <view class="user_row">
+            <view class="uesr_name">{{address.userName}}</view>
+            <view class="uesr_phone">{{address.telNumber}}</view>
+        </view>
+        <view class="address">{{address.full}}</view>
+    </view>
+</view>
+<!-- 购物车内容 开始 -->
+<view class="cart_content">
+    <view class="cart_main">
+        <!-- 商品 -->
+        <block wx:if="{{cart.length}}">
+            <view class="cart_item" wx:for="{{cart}}" wx:key="goods_id" >
+                <!-- 商品图片 -->
+                <view class="item_img">
+                    <navigator>
+                        <image src="{{item.goods_big_logo}}" mode="widthFix"></image>
+                    </navigator>
+                </view>
+                <!-- 商品信息 -->
+                <view class="item_content">
+                    <navigator>
+                        <view class="item_name">{{item.goods_name}}</view>
+                    </navigator>
+                    <view class="item_price_row">
+                        <view class="item_price">￥{{item.goods_price}}</view>
+                        <view class="item_num_warp">
+                            <view class="item_num">×{{item.num}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <view class="cart_empty" wx:else>
+            <image mode="widthFix" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584450443688&di=b18beeb0b4d6d9273aa4713939371fbd&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fe1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658">       
+            </image>
+            <view class="text1">购物车竟然是空的</view>    
+            <view class="text2">再忙,也要记得买点什么犒赏自己~</view>    
+        </view>
+    </view>
+</view>
+<!-- 购物车内容 结束 -->
+<!-- 底部结算栏 开始 -->
+<view class="btm_counter_bar {{isIphoneX?'isIphoneX':''}}" wx:if="{{cart.length}}">
+    <view class="counter_warp">
+        <view class="total">实付金额:</view>
+        <view class="payment">￥{{payment}}</view>
+        <view class="counter_btn">
+            <view class="text">
+                <view class="gocounter">微信支付</view>
+            </view>
+            <button bindtap="handlePay"></button>
+        </view>
+    </view>
+</view>
+<!-- 底部结算栏 结束 -->
